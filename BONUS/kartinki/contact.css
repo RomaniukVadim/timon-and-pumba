@@ -1,0 +1,32 @@
+*{
+padding : 0;
+margin : 0;
+border : 0;
+}
+body{
+background-attachment : fixed;
+background-size : 100% auto;
+}
+.blended_grid{
+display : block;
+
+overflow : auto;
+text-align: center;
+}
+.pageColumnLeft{
+float : left;
+clear : none;
+width : 70%;
+
+}
+.pageColumnMid{
+float : left;
+clear : none;
+width : 30%;
+}
+.pageColumnRight{
+float : left;
+clear : none;
+height : 600px;
+width : 300px;
+}

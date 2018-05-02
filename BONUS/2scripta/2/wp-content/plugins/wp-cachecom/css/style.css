@@ -1,0 +1,135 @@
+.switch {
+  margin: 0 auto;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+.switch label {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+.switch input {
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  opacity: 0;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.switch.toggle3 {
+  width: 80px;
+  height: 20px;
+}
+
+.switch.toggle3 label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #a5a39d;
+  border-radius: 20px;
+  box-shadow:
+      inset 0 3px 8px 1px rgba(0,0,0,0.2),
+      0 1px 0 rgba(255,255,255,0.5);
+}
+
+.switch.toggle3 label:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px; right: 0px; bottom: 0px; left: 0px;
+  border-radius: inherit;
+  background: #ababab);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3),
+        0 1px 1px rgba(0,0,0,0.25)
+}
+
+.switch.toggle3 label:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -18px; right: -18px; bottom: -18px; left: -18px;
+  border-radius: inherit;
+  background: #eee);
+  box-shadow:
+      0 1px 0 rgba(255,255,255,0.5);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -o-filter: blur(1px);
+  filter: blur(1px)
+}
+
+.switch.toggle3 label i {
+  display: block;
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  background: silver;
+  position: absolute;
+  z-index: 2;
+  right: 50%;
+  top: 0;
+  background: #b2ac9e;
+  background: -moz-linear-gradient(#f7f2f6, #b2ac9e);
+  background: -ms-linear-gradient(#f7f2f6, #b2ac9e);
+  background: -o-linear-gradient(#f7f2f6, #b2ac9e);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f2f6), to(#b2ac9e));
+  background: -webkit-linear-gradient(#f7f2f6, #b2ac9e);
+  background: linear-gradient(#f7f2f6, #b2ac9e);
+  box-shadow:
+      inset 0 1px 0 white,
+      0 0 5px rgba(0,0,0,0.3),
+      0 2px 5px rgba(0,0,0,0.2);
+}
+
+.switch.toggle3 label i:after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  width: 70%;
+  height: 50%;
+  background: #d2cbc3);
+  border-radius: inherit
+}
+
+.switch.toggle3 label i:before {
+  content: "off";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  color: rgba(0,0,0,0.4);
+  text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #97958e;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: -85%;
+}
+
+.switch.toggle3 input:checked ~ label {
+  background: #9abb82;
+}
+
+.switch.toggle3 input:checked ~ label i {
+  right: -1%;
+}
+
+.switch.toggle3 input:checked ~ label i:before {
+  content: "on";
+  right: 115%;
+  color: #82a06a;
+  text-shadow: 
+    0 1px 0 #afcb9b,
+    0 -1px 0 #6b8659;
+}

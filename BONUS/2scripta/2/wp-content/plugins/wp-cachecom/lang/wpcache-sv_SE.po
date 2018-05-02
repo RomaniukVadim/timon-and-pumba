@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Cache.com v1.0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-01-10 00:10:27+0000\n"
+"Last-Translator: admin <enqinet@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#. translators: plugin header field 'Name'
+#: inc/functions.php:111
+#: wp-cache-com.php:0
+#@ wpcache
+msgid "WP-Cache.com"
+msgstr "WP-Cache.com"
+
+#: inc/functions.php:125
+#@ wpcache
+msgid "WP-Cache.com Options"
+msgstr "WP-Cache.com alternativ"
+
+#: inc/functions.php:139
+#@ wpcache
+msgid "General Options"
+msgstr "Allmänna Alternativ"
+
+#: inc/functions.php:142
+#@ wpcache
+msgid "Cache Frontend"
+msgstr "Cache Frontend"
+
+#: inc/functions.php:149
+#: inc/functions.php:163
+#@ wpcache
+msgid "Turn \"On\" to enable"
+msgstr "Aktivera 'On' för att aktivera"
+
+#: inc/functions.php:150
+#@ wpcache
+msgid "This will cache all frontend posts, pages including your homepage. Cached files are only served to non logged in users."
+msgstr "Detta kommer att cachelagra alla frontend inlägg, sidor, inklusive din hemsida. Cachelagrade filer serveras endast till icke inloggade användare."
+
+#: inc/functions.php:156
+#@ wpcache
+msgid "New Post or Page"
+msgstr "Nytt inlägg eller sida"
+
+#: inc/functions.php:164
+#@ wpcache
+msgid "Clear all cache files when a post or page is published."
+msgstr "Rensa alla cachefiler när en post eller sida publiceras."
+
+#: inc/functions.php:189
+#@ wpcache
+msgid "Delete Cache"
+msgstr "Delete Cache"
+
+#: inc/functions.php:192
+#@ wpcache
+msgid "Clear all cache"
+msgstr "Rensa all cache"
+
+#: inc/functions.php:195
+#@ wpcache
+msgid "Target folder:"
+msgstr "Mål mapp:"
+
+#: inc/functions.php:253
+#@ wpcache
+msgid "All cache files have been deleted"
+msgstr "Alla cachefiler har tagits bort"
+
+#: inc/functions.php:255
+#@ wpcache
+msgid "Permission of <strong>/wp-content/cache</strong> must be <strong>755</strong>"
+msgstr "Tillstånd av <strong>/wp-content/cache</strong> måste vara <strong>755</strong>"
+
+#: inc/functions.php:258
+#@ wpcache
+msgid "Cache deleted"
+msgstr "Cache utgå"
+
+#: inc/functions.php:338
+#@ wpcache
+msgid ".htacces is not writable"
+msgstr ".htacces är inte skrivbar"
+
+#: inc/functions.php:340
+#: inc/functions.php:344
+#@ wpcache
+msgid "Options saved"
+msgstr "Alternativ sparade"
+
+#. translators: plugin header field 'PluginURI'
+#: wp-cache-com.php:0
+#@ wpcache
+msgid "http://wp-cache.com/"
+msgstr "http://wp-cache.com/"
+
+#. translators: plugin header field 'Description'
+#: wp-cache-com.php:0
+#@ wpcache
+msgid "The easiest and fastest WordPress Cache plugin. WP-Cache.com, it just works!"
+msgstr "Det enklaste och snabbaste Wordpress Cache plugin. WP-Cache.com, det fungerar bara!"
+
+#. translators: plugin header field 'Author'
+#: wp-cache-com.php:0
+#@ wpcache
+msgid "Jason Jersey"
+msgstr "Jason Jersey"
+
+#. translators: plugin header field 'AuthorURI'
+#: wp-cache-com.php:0
+#@ wpcache
+msgid "http://twitter.com/degersey"
+msgstr "http://twitter.com/degersey"
+
+#. translators: plugin header field 'Version'
+#: wp-cache-com.php:0
+#@ wpcache
+msgid "1.0.7"
+msgstr "1.0.7"
+

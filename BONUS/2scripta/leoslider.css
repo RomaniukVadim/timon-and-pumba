@@ -1,0 +1,399 @@
+@font-face {
+    font-family: 'leoslider-icon';
+    src: url('fonts/leoslider-icon.eot');
+    src: url('fonts/leoslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/leoslider-icon.woff') format('woff'), url('fonts/leoslider-icon.ttf') format('truetype'), url('fonts/leoslider-icon.svg#leoslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+.leo-container a:hover,
+.leo-slider a:hover,
+.leo-container a:focus,
+.leo-slider a:focus {
+    outline: 0
+}
+.slides,
+.slides>li,
+.leo-control-nav,
+.leo-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.leo-pauseplay span {
+    text-transform: capitalize
+}
+.leoslider {
+        height: 647px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.leoslider .slides>li {
+    border-left: 1px solid rgba(200,200,200,0.5);
+    border-right: 1px solid rgba(200,200,200,0.5);
+    display: none;
+    -webkit-backface-visibility: hidden
+}
+.leoslider .slides img {
+    width: 100%;
+    display: block
+}
+.leoslider .slides:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+html[xmlns] .leoslider .slides {
+    display: block
+}
+* html .leoslider .slides {
+    height: 1%
+}
+.no-js .leoslider .slides>li:first-child {
+    display: block
+}
+.leoslider {
+    background: #fff;
+    position: relative;
+    zoom: 1;
+}
+.leoslider .slides {
+    zoom: 1
+}
+.leoslider .slides img {
+    height: auto
+}
+.leo-viewport {
+    max-height: 2000px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease
+}
+.loading .leo-viewport {
+    max-height: 300px
+}
+.carousel li {
+    margin-right: 5px
+}
+.leo-direction-nav {
+    height: 0
+}
+.leo-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: 42px;
+    height: 52px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+   color: rgb(0, 0, 0);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+	background: url('../images/arrows.png') no-repeat -34px 0px;
+}
+.leo-direction-nav a:before {
+    font-size: 40px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3)
+}
+.leo-direction-nav a.leo-next:before {
+    background: url('../images/arrows.png') no-repeat 0px 0px;
+}
+.leo-direction-nav .leo-prev {
+   background: url('../images/arrows.png') no-repeat 0px 0px;
+}
+.leo-direction-nav .leo-next {
+    right: -50px;
+    text-align: right;
+}
+.leoslider:hover .leo-direction-nav .leo-prev {
+    opacity: .7;
+    left: 10px
+}
+.leoslider:hover .leo-direction-nav .leo-prev:hover {
+    opacity: 1
+}
+.leoslider:hover .leo-direction-nav .leo-next {
+    opacity: .7;
+    right: 10px
+}
+.leoslider:hover .leo-direction-nav .leo-next:hover {
+    opacity: 1
+}
+.leo-direction-nav .leo-disabled {
+    opacity: 0!important;
+    filter: alpha(opacity=0);
+    cursor: default
+}
+.leo-pauseplay a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    opacity: .8;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000
+}
+.leo-pauseplay a:before {
+    font-family: "leoslider-icon";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f004'
+}
+.leo-pauseplay a:hover {
+    opacity: 1
+}
+.leo-pauseplay a.leo-play:before {
+    content: '\f003'
+}
+.leo-control-nav {
+       width: 100%;
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+    z-index: 3;
+    left: 50px;
+}
+.leo-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline
+}
+.leo-control-paging li a {
+    width: 22px;
+    height: 11px;
+    display: block;
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-indent: -9999px;
+    -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.leo-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, 0.7)
+}
+.leo-control-paging li a.leo-active {
+    background: #000;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: default
+}
+.leo-control-thumbs {
+    margin: 5px 0 0;
+    position: static;
+    overflow: hidden
+}
+.leo-control-thumbs li {
+    width: 25%;
+    float: left;
+    margin: 0
+}
+.leo-control-thumbs img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: .7;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease-
+}
+.leo-control-thumbs img:hover {
+    opacity: 1
+}
+.leo-control-thumbs .leo-active {
+    opacity: 1;
+    cursor: default
+}
+
+.leo-line{
+    left: 50px;
+    border-left: 1px solid rgba(255,255,255,0.7);
+}
+.leo-line,
+.leo-vline{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    background: rgba(255,255,255,0.1);h
+    box-shadow: 1px 1px 200px rgba(200, 200, 200, 0.4);
+}
+.leo-vline{
+    top: 50px;
+    border-top: 1px solid rgba(255,255,255,0.7);
+    background-position: 0 0;
+}
+@media screen and (max-width:1366px) {
+	.leoslider {
+		height: 518px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width:1024px) {
+	.leoslider {
+		height: 418px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+	.leo-control-nav {
+		width: 100%;
+		position: absolute;
+		bottom: 100px;
+		text-align: center;
+		z-index: 3;
+		left: 0px!important;
+	}
+}
+@media screen and (max-width:991px) {
+	.leoslider {
+		height: 394px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width:800px) {
+	.leoslider {
+		height: 305px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width:768px) {
+	.leo-control-nav {
+		width: 100%;
+		position: absolute;
+		bottom: 29px;
+	}
+	
+	.leo-direction-nav a {
+		text-decoration: none;
+		display: block;
+		width: 42px;
+		height: 52px;
+		margin: -20px 0 0;
+		position: absolute;
+		top: 42%;
+	}
+}
+@media screen and (max-width:667px) {
+	.leoslider {
+		height: 269px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	.leo-control-paging li a {
+		width: 31px;
+		height: 6px;
+	}
+}
+@media screen and (max-width:640px) {
+	.leoslider {
+		height: 259px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width:600px) {
+	.leoslider {
+		height: 215px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width:480px) {
+
+	.leoslider {
+		height: 165px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width:384px) {
+	.leoslider {
+		height: 165px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	.leo-direction-nav a {
+		text-decoration: none;
+		display: block;
+		width: 42px;
+		height: 52px;
+		margin: -20px 0 0;
+		position: absolute;
+		top: 32%;
+	}
+	.navbar {
+		width: 100%;
+		float: none;
+		padding: 0em 0;
+		text-align: center;
+	}
+	.navbar {
+		width: 100%;
+		float: none;
+		padding: 0em 0;
+		text-align: center;
+	}
+	.leo-direction-nav a {
+		width:30px;
+			height: 35px;
+		-webkit-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		background: url('../images/arrows2.png') no-repeat -27px 0px;
+		z-index:9999;
+	}
+	.leo-direction-nav .leo-prev {
+		background: url('../images/arrows2.png') no-repeat 0px 0px;
+	}
+}
+@media screen and (max-width:320px) {
+	.leoslider {
+		height: 122px!important;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	.leo-control-nav {
+		width: 100%;
+		position: absolute;
+		bottom: 7px;
+	}
+
+
+}

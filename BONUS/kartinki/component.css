@@ -1,0 +1,177 @@
+/* General styles for all menus */
+.cbp-spmenu {
+	  background:#4A4A4A;
+	position: fixed;
+}
+button#showLeftPush {
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: 43px;
+}
+.cbp-spmenu h3 {
+
+ color: #fff;
+  font-size: 1.9em;
+    padding: 20px 17px;
+  margin: 0;
+  font-weight: 300;
+  background: #FF7900;
+  text-align: center;
+  text-transform: capitalize;
+}
+.cbp-spmenu a {
+
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+	  text-align: center;
+}
+.cbp-spmenu a:hover,.cbp-spmenu a.active {
+color:#000;
+}
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+text-decoration:none;
+	border-bottom:1px solid #3A3A3A;
+    padding: 1.8em 0;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	right: -240px;
+}
+
+.cbp-spmenu-right {
+	left: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	right: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	left: 0px;
+}
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	right: 0;
+}
+
+.cbp-spmenu-push-toright {
+	right: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	right: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+
+
+}
+
+@media screen and (max-height: 26.375em){
+
+
+}
+@media (max-width:1366px){
+
+}
+@media (max-width:1024px){
+
+}
+@media (max-width:800px){
+button#showLeftPush {
+    padding: 10px 13px 10px 13px;
+	}
+}
+@media (max-width:800px){
+	.flex-control-nav {
+	  width: 100%;
+	  position: absolute;
+	  bottom: 27%;
+	  right: 0%;
+	}
+}
+@media (max-width:768px){
+	.flex-control-nav {
+	  width: 100%;
+	  position: absolute;
+	  bottom: 27%;
+	  right: 0%;
+	}
+}
+@media (max-width:480px){
+
+}
+@media (max-width:320px){
+
+}
